@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, Output, SimpleChanges, EventEmitter} from '@angular/core';
+import {Component, Input, OnChanges, Output, SimpleChanges, EventEmitter, OnInit} from '@angular/core';
 import {
   GlassesTypes,
   ClothingGraphicTypes,
@@ -17,7 +17,7 @@ import {lightenDarkenColor} from "../helper";
   selector: 'app-avatar',
   templateUrl: './avatar.component.svg',
 })
-export class AvatarComponent implements OnChanges {
+export class AvatarComponent implements OnChanges, OnInit {
   @Input() public hairType: HairTypes;
   @Input() public eyebrowType: EyebrowTypes;
   @Input() public eyeType: EyeTypes;
@@ -59,6 +59,10 @@ export class AvatarComponent implements OnChanges {
   public lightenDarkenColor = lightenDarkenColor;
 
   constructor() {
+  }
+
+  ngOnInit(){
+    // console.log(eyeType )
   }
 
   ngOnChanges(changes: SimpleChanges): void {

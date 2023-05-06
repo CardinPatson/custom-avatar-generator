@@ -20,11 +20,14 @@
   </div>
   <div>
     <div class="box">
+      <!-- random all thing  -->
       <button (click)="goCompletelyRandom()"><div class="random"></div>{{texts.everything}}</button>
+      <!-- random all color -->
       <button (click)="getRandomColors()"><div class="random"></div>{{texts.allColors}}</button>
       <ng-container *ngIf="enableBackground">
         <h4>{{texts.background}}</h4>
         <input type="color" [(ngModel)]="colors.background"/>
+        <!-- random background -->
         <button (click)="colors.background = randomizeColor();"><div class="random small"></div></button>
       </ng-container>
     </div>

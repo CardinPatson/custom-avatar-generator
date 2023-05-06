@@ -164,5 +164,8 @@
       }
     }
   },
-  "defaultProject": "custom-avatar-generator"
+  "defaultProject": "custom-avatar-generator",
+  "cli": {
+    "analytics": "af1f4931-0448-4033-8e0f-a2ad88ac0328"
+  }
 }
