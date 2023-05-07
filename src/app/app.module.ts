@@ -2,9 +2,10 @@ import {DoBootstrap, Injector, NgModule} from '@angular/core';
 import { AppComponent } from './app.component';
 import {createCustomElement} from "@angular/elements";
 import {AvatarGeneratorModule} from "../../projects/avatar-generator-lib/src/lib/avatar-generator.module";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [AvatarGeneratorModule],
+  imports: [AvatarGeneratorModule, HttpClientModule],
   providers: [],
   declarations: [AppComponent],
   exports: [AppComponent],

@@ -9,5 +9,8 @@ import { Angry } from "./Angry.component";
 })
 
 export class Eyebrow implements OnInit {
-
+  ngOnInit(): void {
+      
+  }
+  
 }

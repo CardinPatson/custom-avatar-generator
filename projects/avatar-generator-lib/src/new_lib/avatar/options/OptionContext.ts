@@ -88,6 +88,20 @@ export default class OptionContext {
       listener(key, value);
     }
   }
+  setDefaultValue(key: string, defaultValue: string) {
+    const optionState = this.getOptionState(key)!;
+    this.setState({
+      [key]: {
+        ...optionState,
+        defaultValue,
+      },
+    });
+  }
+  setData(data: { [index: string]: string }) {
+    this._data = data;
+    this.notifyListener();
+  }
+
   optionEnter(key: string) {
     const optionState = this.getOptionState(key);
 

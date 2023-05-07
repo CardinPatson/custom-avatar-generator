@@ -41,7 +41,7 @@ export class AvatarComponent implements OnChanges, OnInit {
     glasses: ''
   };
   @Input() public enableBackground: boolean = false;
-  @Input() public enableFace: boolean = false;
+  @Input() public enableFace: boolean = true;
   @Input() public shape: 'round' | 'square' = 'round';
 
   @Output() private avatarChanged = new EventEmitter<boolean>();

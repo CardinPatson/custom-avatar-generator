@@ -1,12 +1,11 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Texts} from "../../projects/avatar-generator-lib/src/lib/model";
-
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Texts } from '../../projects/avatar-generator-lib/src/lib/model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   @Input() public shape: 'round' | 'square' = 'round';
   @Input() private enableBackground: string;
   @Input() private enableFace: string;
@@ -27,13 +26,13 @@ export class AppComponent implements OnInit{
     eyebrows: 'Eyebrows',
     nose: 'Nose',
     mouth: 'Mouth',
-    facialHair: 'Facial Hair'
+    facialHair: 'Facial Hair',
   });
   @Output() private svgUrl = new EventEmitter<string>();
 
   public _texts: Texts = JSON.parse(this.texts);
   public _enableBackground: boolean = false;
-  public _enableFace: boolean = false;
+  public _enableFace: boolean = true;
   public _displayDownload: boolean = false;
 
   ngOnInit(): void {
@@ -46,7 +45,4 @@ export class AppComponent implements OnInit{
   public emitSVG(event: string): void {
     this.svgUrl.emit(event);
   }
-
 }
-
-

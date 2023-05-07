@@ -80,7 +80,8 @@ export enum EyeTypes {
   SURPRISED = 'SURPRISED',
   WINK = 'WINK',
   WINK_WACKY = 'WINK_WACKY',
-  X_DIZZY = 'X_DIZZY'
+  X_DIZZY = 'X_DIZZY',
+  CRY='CRY'
 }
 
 export enum NoseTypes {

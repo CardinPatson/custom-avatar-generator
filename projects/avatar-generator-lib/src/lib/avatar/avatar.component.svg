@@ -161,6 +161,12 @@
       <path *ngSwitchCase="EyeTypes.X_DIZZY" d="M34.5 30.7L29 25.2l-5.5 5.5c-.4.4-1.1.4-1.6 0l-1.6-1.6c-.4-.4-.4-1.1 0-1.6l5.5-5.5-5.5-5.5c-.4-.5-.4-1.2 0-1.6l1.6-1.6c.4-.4 1.1-.4 1.6 0l5.5 5.5 5.5-5.5c.4-.4 1.1-.4 1.6 0l1.6 1.6c.4.4.4 1.1 0 1.6L32.2 22l5.5 5.5c.4.4.4 1.1 0 1.6l-1.6 1.6c-.4.4-1.1.4-1.6 0zm54 0L83 25.2l-5.5 5.5c-.4.4-1.1.4-1.6 0l-1.6-1.6c-.4-.4-.4-1.1 0-1.6l5.5-5.5-5.5-5.5c-.4-.5-.4-1.2 0-1.6l1.6-1.6c.4-.4 1.1-.4 1.6 0l5.5 5.5 5.5-5.5c.4-.4 1.1-.4 1.6 0l1.6 1.6c.4.4.4 1.1 0 1.6L86.2 22l5.5 5.5c.4.4.4 1.1 0 1.6l-1.6 1.6c-.4.4-1.1.4-1.6 0z"
             [attr.fill]="colors.eyes"/>
 
+      <g *ngSwitchCase="EyeTypes.CRY" transform='translate(0.000000, 8.000000)'>
+        <circle id='Eye' fillOpacity='0.599999964' [attr.fill]="colors.eyes"  fillRule='evenodd' cx='30' cy='22' r='6'/>
+        <path d='M25,27 C25,27 19,34.2706667 19,38.2706667 C19,41.5846667 21.686,44.2706667 25,44.2706667 C28.314,44.2706667 31,41.5846667 31,38.2706667 C31,34.2706667 25,27 25,27 Z' id='Drop' fill="#fff" fill-rule="evenodd" />
+        <circle id='Eye' fillOpacity='0.599999964' [attr.fill]="colors.eyes"  fillRule='evenodd' cx='82' cy='22' r='6'/>
+      </g>
+
     </g>
     <g transform="translate(112, 122)" [ngSwitch]="noseType">
       <path  *ngSwitchCase="NoseTypes.DEFAULT" fill-rule="evenodd" clip-rule="evenodd" d="M16 8c0 4.418 5.373 8 12 8s12-3.582 12-8"
