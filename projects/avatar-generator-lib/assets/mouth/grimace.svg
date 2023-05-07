@@ -1,0 +1,5 @@
+      <svg>
+        <rect x="22" y="7" width="64" height="26" rx="13" fill="colors.mouth"/>
+        <rect x="24" y="9" width="60" height="22" rx="11" fill="#fff"/>
+        <path d="M24.181 18H32V9.414A11 11 0 0135 9h1v9h9V9h4v9h9V9h4v9h9V9h2c.683 0 1.351.062 2 .181V18h8.819l.048.282v3.436l-.048.282H75v8.819c-.649.119-1.317.181-2 .181h-2v-9h-9v9h-4v-9h-9v9h-4v-9h-9v9h-1a11 11 0 01-3-.414V22h-7.819a11.057 11.057 0 010-4z" fill="#E6E6E6"/>
+      </svg>
